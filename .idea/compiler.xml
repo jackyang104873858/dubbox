@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dubbox-consumer" />
+        <module name="dubbox-model" />
+        <module name="dubbox-provider" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbox-consumer" options="-g" />
+      <module name="dubbox-model" options="-g" />
+      <module name="dubbox-parent" options="" />
+      <module name="dubbox-provider" options="-g" />
+    </option>
+  </component>
+</project>
