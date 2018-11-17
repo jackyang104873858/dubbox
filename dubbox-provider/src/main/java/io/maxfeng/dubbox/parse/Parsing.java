@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class Parsing {
 
-    public static List<RModel> rModels = Lists.newCopyOnWriteArrayList();
+    public static List<RModel> rModels = Lists.newArrayList();
 
     /**
      * 接口存储数据结构设计
@@ -50,8 +50,10 @@ public class Parsing {
                         //default condition Object class; add interface to collection
                         RModel v = new RModel();
                         v.setClassPathName(superInterfaces.get(0).getName());
-                        v.setGroup(annotation.group());
                         v.setClazz(superInterfaces.get(0));
+                        v.setCount();
+                        //setGroup方法写在最后面  避免空指针
+                        v.setGroup(annotation.group());
                         rModels.add(v);
 
                     } else {
@@ -62,8 +64,10 @@ public class Parsing {
                                 //不包含则是没有去掉接口
                                 RModel v = new RModel();
                                 v.setClazz(var);
-                                v.setGroup(annotation.group());
                                 v.setClassPathName(var.getName());
+                                v.setCount();
+                                //setGroup方法写在最后面  避免空指针
+                                v.setGroup(annotation.group());
                                 rModels.add(v);
                             }
                         }
@@ -91,7 +95,19 @@ public class Parsing {
         }
     }
 
+    //计算处理接口注册  group 一定不等于 "" || null
+    private static void tableRModel() {
 
+        for (RModel var1 : rModels) {
+
+            for (RModel var2 : rModels) {
+                if (var1.getClazz().equals(var2.getClazz())) {
+                    //一个接口多个实现类  处理结构
+
+                }
+            }
+        }
+    }
 
 
 }

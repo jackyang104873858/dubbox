@@ -12,9 +12,15 @@ public class StringTest {
         System.out.println(split.length);
     }
 
-    public static void main(String[] args) {
-        int i;
-
-//        System.out.println(i);
+    @Test
+    public void testToLower() {
+        String className = "InvocationTest";
+        //将第一个字符转换为小写
+        char[] tmp = new char[1];
+        tmp[0] = className.charAt(0);
+        String var = new String(tmp);
+        String r = var.toLowerCase();
+        className = className.replaceFirst(var, r);
+        System.out.println(className);
     }
 }
