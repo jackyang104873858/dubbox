@@ -1,6 +1,5 @@
 package io.maxfeng.dubbox.util;
 
-import io.maxfeng.dubbox.common.util.NetUtil;
 import org.junit.Test;
 
 import java.net.SocketException;

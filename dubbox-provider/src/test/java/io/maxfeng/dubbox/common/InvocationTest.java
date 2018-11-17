@@ -91,7 +91,5 @@ public class InvocationTest {
     @Test
     public void testInterfaceSubClass() {
         Class<DubboxInterface> clazz = DubboxInterface.class;
-
-//        clazz.get
     }
 }

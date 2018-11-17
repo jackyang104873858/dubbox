@@ -11,7 +11,7 @@
     <modules>
         <module>dubbox-provider</module>
         <module>dubbox-consumer</module>
-        <module>dubbox-model</module>
+        <module>dubbox-common</module>
     </modules>
 
     <parent>

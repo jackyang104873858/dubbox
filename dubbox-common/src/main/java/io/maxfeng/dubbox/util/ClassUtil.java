@@ -1,4 +1,4 @@
-package io.maxfeng.dubbox.common.util;
+package io.maxfeng.dubbox.util;
 
 import com.google.common.collect.Lists;
 

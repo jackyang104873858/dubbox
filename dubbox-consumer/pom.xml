@@ -41,7 +41,7 @@
         </dependency>
         <dependency>
             <groupId>io.maxfeng</groupId>
-            <artifactId>dubbox-model</artifactId>
+            <artifactId>dubbox-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

@@ -1,6 +1,5 @@
 package io.maxfeng.dubbox.util;
 
-import io.maxfeng.dubbox.common.util.ClassUtil;
 import org.junit.Test;
 
 import java.util.List;

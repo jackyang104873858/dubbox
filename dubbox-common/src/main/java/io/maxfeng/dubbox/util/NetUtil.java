@@ -1,4 +1,4 @@
-package io.maxfeng.dubbox.common.util;
+package io.maxfeng.dubbox.util;
 
 import java.net.InterfaceAddress;
 import java.net.NetworkInterface;

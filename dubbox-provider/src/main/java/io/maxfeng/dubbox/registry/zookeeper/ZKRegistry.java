@@ -1,7 +1,7 @@
 package io.maxfeng.dubbox.registry.zookeeper;
 
 import io.maxfeng.dubbox.boot.ScanningRpc;
-import io.maxfeng.dubbox.common.util.NetUtil;
+import io.maxfeng.dubbox.util.NetUtil;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;

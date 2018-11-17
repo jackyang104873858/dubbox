@@ -3,7 +3,7 @@ package io.maxfeng.dubbox.invoke;
 import com.alibaba.fastjson.JSON;
 import com.google.common.base.Strings;
 import io.maxfeng.dubbox.boot.ScanningRpc;
-import io.maxfeng.dubbox.common.exception.InvokeException;
+import io.maxfeng.dubbox.exception.InvokeException;
 import io.maxfeng.dubbox.model.MsgBody;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

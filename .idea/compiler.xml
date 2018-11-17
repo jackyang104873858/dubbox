@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dubbox-common" />
         <module name="dubbox-consumer" />
-        <module name="dubbox-model" />
         <module name="dubbox-provider" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbox-common" options="-g" />
       <module name="dubbox-consumer" options="-g" />
-      <module name="dubbox-model" options="-g" />
       <module name="dubbox-parent" options="" />
       <module name="dubbox-provider" options="-g" />
     </option>

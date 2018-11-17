@@ -1,6 +1,6 @@
 package io.maxfeng.dubbox.zk_redis;
 
-import io.maxfeng.dubbox.common.util.NetUtil;
+import io.maxfeng.dubbox.util.NetUtil;
 import io.maxfeng.dubbox.registry.zookeeper.ZKRegistry;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.zookeeper.CreateMode;

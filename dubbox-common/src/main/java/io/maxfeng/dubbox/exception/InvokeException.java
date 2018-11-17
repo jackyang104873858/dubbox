@@ -1,4 +1,4 @@
-package io.maxfeng.dubbox.common.exception;
+package io.maxfeng.dubbox.exception;
 
 public class InvokeException extends Exception {
 

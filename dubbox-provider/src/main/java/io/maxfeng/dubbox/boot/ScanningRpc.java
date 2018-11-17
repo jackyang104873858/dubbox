@@ -2,7 +2,7 @@ package io.maxfeng.dubbox.boot;
 
 import com.google.common.collect.Maps;
 import io.maxfeng.dubbox.annotation.Rpc;
-import io.maxfeng.dubbox.common.util.ClassUtil;
+import io.maxfeng.dubbox.util.ClassUtil;
 import io.maxfeng.dubbox.invoke.DelegateDynamicProxy;
 import io.maxfeng.dubbox.registry.zookeeper.ZKRegistry;
 
