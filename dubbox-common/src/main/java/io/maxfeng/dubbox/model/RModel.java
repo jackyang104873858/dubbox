@@ -39,4 +39,12 @@ public class RModel implements Serializable {
         this.classPathName = classPathName;
     }
 
+    @Override
+    public String toString() {
+        return "RModel{" +
+                "classPathName='" + classPathName + '\'' +
+                ", group='" + group + '\'' +
+                ", clazz=" + clazz +
+                '}';
+    }
 }

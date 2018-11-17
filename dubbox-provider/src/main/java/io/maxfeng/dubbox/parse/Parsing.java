@@ -6,6 +6,7 @@ import io.maxfeng.dubbox.exception.ConfigRpcException;
 import io.maxfeng.dubbox.model.RModel;
 import io.maxfeng.dubbox.util.ClassUtil;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -36,36 +37,34 @@ public class Parsing {
                 Class<?>[] excludes = annotation.exclude();
 
                 //参数检查
-                Class<?>[] superInterfaces = aClass.getInterfaces();
-                checkExcludeClass(excludes, superInterfaces);
+                Class<?>[] temp = aClass.getInterfaces();
 
-                if (superInterfaces.length > 0) {
+                List<Class<?>> superInterfaces = new ArrayList<>(Arrays.asList(temp));
 
-                    if (superInterfaces.length == 1) {
+                checkExcludeArg(excludes, superInterfaces);
 
-                        if (excludes.length > 1) {
-                            throw new ConfigRpcException("add interface " + aClass.getName() + " registry failed; Because of exclude");
-                        }
+                if (superInterfaces.size() > 0) {
+
+                    if (superInterfaces.size() == 1 && excludes.length == 1 && excludes[0].equals(Object.class)) {
+
                         //default condition Object class; add interface to collection
-                        if (excludes.length == 1 && excludes[0].equals(Object.class)) {
-                            RModel v = new RModel();
-                            v.setClassPathName(aClass.getName());
-                            v.setGroup(annotation.group());
-                            v.setClazz(aClass);
-                            rModels.add(v);
-                        }
+                        RModel v = new RModel();
+                        v.setClassPathName(superInterfaces.get(0).getName());
+                        v.setGroup(annotation.group());
+                        v.setClazz(superInterfaces.get(0));
+                        rModels.add(v);
 
                     } else {
                         //当前类实现了2个或者2个以上的接口  需要排除的是实现的接口不是当前业务系统定义的接口
-                        if (excludes.length == superInterfaces.length) continue;
-                        List<Class<?>> var1 = Arrays.asList(excludes);
+                        if (excludes.length == superInterfaces.size()) continue;
                         for (Class<?> var : superInterfaces) {
-                            if (!var1.contains(var)) {
+                            if (classList.contains(var)) {
                                 //不包含则是没有去掉接口
                                 RModel v = new RModel();
-                                v.setClazz(aClass);
+                                v.setClazz(var);
                                 v.setGroup(annotation.group());
-                                v.setClassPathName(aClass.getName());
+                                v.setClassPathName(var.getName());
+                                rModels.add(v);
                             }
                         }
                     }
@@ -81,13 +80,18 @@ public class Parsing {
      * @param excludes
      * @param superInterfaces
      */
-    private static void checkExcludeClass(Class<?>[] excludes, Class<?>[] superInterfaces) throws ConfigRpcException {
+    private static void checkExcludeArg(Class<?>[] excludes, List<Class<?>> superInterfaces) throws ConfigRpcException {
         if (excludes.length == 1 && excludes[0].equals(Object.class)) return;
-        List<Class<?>> tmp = Arrays.asList(superInterfaces);
         for (Class<?> exclude : excludes) {
-            if (!tmp.contains(exclude)) {
+            if (!superInterfaces.contains(exclude)) {
                 throw new ConfigRpcException("exclude interface is error,you only exclude current class implement interfaces");
+            } else {
+                superInterfaces.remove(exclude);
             }
         }
     }
+
+
+
+
 }

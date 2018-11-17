@@ -2,14 +2,12 @@ package io.maxfeng.dubbox.biz;
 
 import io.maxfeng.dubbox.annotation.Rpc;
 
-import java.io.Serializable;
-
 /**
  * @author MaXueFeng
  * @since 1.0
  */
-@Rpc(group = "group1", alias = "dubboxInterfaceImpl1")
-public class DubboxInterfaceImpl implements DubboxInterface, Serializable {
+@Rpc(group = "group2", alias = "dubboxInterfaceImpl2")
+public class DubboxInterfaceImpl2 implements DubboxInterface {
 
     public void producer() {
         for (int i = 0; i < 10; i++) {
