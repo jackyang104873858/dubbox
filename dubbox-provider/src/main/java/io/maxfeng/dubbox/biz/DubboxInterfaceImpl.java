@@ -6,7 +6,7 @@ import io.maxfeng.dubbox.annotation.Rpc;
  * @author MaXueFeng
  * @since 1.0
  */
-@Rpc
+@Rpc(group = "dubbox-impl1", alias = "dubboxInterfaceImpl")
 public class DubboxInterfaceImpl implements DubboxInterface {
 
     public void producer() {
