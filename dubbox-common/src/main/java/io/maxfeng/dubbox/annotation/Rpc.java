@@ -24,4 +24,14 @@ public @interface Rpc {
      * @return
      */
     public String alias() default "";
+
+    /**
+     * exclude not registry
+     * this suitable for a class implements two or more than two interface
+     *
+     * @return
+     */
+    public Class<?>[] exclude() default {Object.class};
+
+
 }

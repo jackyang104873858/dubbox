@@ -11,4 +11,10 @@ public class StringTest {
         String[] split = ip.split("\\.");
         System.out.println(split.length);
     }
+
+    public static void main(String[] args) {
+        int i;
+
+//        System.out.println(i);
+    }
 }

@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17ba68cb-f18c-48d4-878b-ee8697501866" name="Default Changelist" comment="项目结构适当调整">
-      <change afterPath="$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/exception/InterfaceImplException.java" afterDir="false" />
+    <list default="true" id="17ba68cb-f18c-48d4-878b-ee8697501866" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/model/RModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/parse/Parsing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/annotation/Rpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/annotation/Rpc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/biz/DubboxInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/biz/DubboxInterfaceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/exception/InterfaceImplException.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/exception/ConfigRpcException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/src/test/java/io/maxfeng/dubbox/common/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/src/test/java/io/maxfeng/dubbox/common/StringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/src/test/java/io/maxfeng/dubbox/zk_redis/CreateModeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/src/test/java/io/maxfeng/dubbox/zk_redis/CreateModeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/annotation/Rpc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/biz/DubboxInterfaceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/biz/DubboxInterfaceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/boot/ScanningRpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/boot/ScanningRpc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/common/Tab.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/common/exception/InvokeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/common/util/ClassUtil$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/common/util/ClassUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/common/util/NetUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/invoke/DelegateDynamicProxy$DynamicProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/invoke/DelegateDynamicProxy$DynamicProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/invoke/DelegateDynamicProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/invoke/DelegateDynamicProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/registry/zookeeper/ZKRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/registry/zookeeper/ZKRegistry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/test-classes/io/maxfeng/dubbox/common/InvocationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/test-classes/io/maxfeng/dubbox/common/InvocationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/test-classes/io/maxfeng/dubbox/common/StringTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/test-classes/io/maxfeng/dubbox/common/StringTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/test-classes/io/maxfeng/dubbox/util/ClassUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/test-classes/io/maxfeng/dubbox/util/ClassUtilTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/test-classes/io/maxfeng/dubbox/util/NetUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/test-classes/io/maxfeng/dubbox/util/NetUtilTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/test-classes/io/maxfeng/dubbox/zk_redis/CreateModeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/test-classes/io/maxfeng/dubbox/zk_redis/CreateModeTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,31 +46,33 @@
     <session id="844569026">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2762" />
+          <entry key="dummy" value="25" />
+          <entry key="java" value="5710" />
           <entry key="txt" value="26" />
           <entry key="xml" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2762" />
-          <entry key="PLAIN_TEXT" value="26" />
+          <entry key="JAVA" value="5710" />
+          <entry key="PLAIN_TEXT" value="51" />
           <entry key="XML" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="8" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="111" />
+          <entry key="class" value="24" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="149" />
           <entry key="pom" value="2" />
           <entry key="properties" value="1" />
           <entry key="txt" value="2" />
@@ -59,9 +81,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="8" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="111" />
+          <entry key="CLASS" value="24" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="149" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="26" />
@@ -70,21 +92,37 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/annotation/Rpc.java">
+        <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/parse/Parsing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="898">
+              <caret line="70" column="21" selection-start-line="57" selection-start-column="27" selection-end-line="70" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/biz/DubboxInterface.java">
+        <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/exception/ConfigRpcException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="144">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+              <folding>
+                <element signature="e#184#185#0" expanded="true" />
+                <element signature="e#210#211#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/annotation/Rpc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -92,8 +130,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/biz/DubboxInterfaceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            <state relative-caret-position="312">
+              <caret line="13" column="72" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/model/RModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -103,6 +150,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -143,9 +191,14 @@
         <option value="$PROJECT_DIR$/dubbox-provider/pom.xml" />
         <option value="$PROJECT_DIR$/dubbox-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/common/Tab.java" />
-        <option value="$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/exception/InterfaceImplException.java" />
+        <option value="$PROJECT_DIR$/dubbox-provider/src/test/java/io/maxfeng/dubbox/common/StringTest.java" />
+        <option value="$PROJECT_DIR$/dubbox-provider/src/test/java/io/maxfeng/dubbox/zk_redis/CreateModeTest.java" />
         <option value="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/biz/DubboxInterfaceImpl.java" />
         <option value="$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/annotation/Rpc.java" />
+        <option value="$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/exception/InterfaceImplException.java" />
+        <option value="$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/exception/ConfigRpcException.java" />
+        <option value="$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/model/RModel.java" />
+        <option value="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/parse/Parsing.java" />
       </list>
     </option>
   </component>
@@ -173,10 +226,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="738" />
-    <option name="y" value="108" />
+    <option name="x" value="211" />
+    <option name="y" value="210" />
     <option name="width" value="1671" />
-    <option name="height" value="939" />
+    <option name="height" value="942" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -186,6 +239,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,6 +250,71 @@
             <path>
               <item name="dubbox-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbox-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbox-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbox-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbox-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbox-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbox-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbox-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbox-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbox-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbox-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbox-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbox-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbox-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbox-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbox-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbox-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbox-parent" type="462c0819:PsiDirectoryNode" />
               <item name="dubbox-provider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -236,19 +355,22 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dubbox" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="parse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbox-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542444835487" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542458986060" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web-template" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36774194" />
@@ -278,7 +400,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InvocationTest.testInterfaceSubClass">
+  <component name="RunManager" selected="JUnit.CreateModeTest.testCreateModeAndValue">
     <configuration name="StartRpcProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.maxfeng.dubbox.StartRpcProvider" />
       <module name="dubbox-provider" />
@@ -292,17 +414,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AtomicTest.testAtomicLong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dubbox-common" />
+    <configuration name="CreateModeTest.testCreateModeAndValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dubbox-provider" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.maxfeng.dubbox.concurrent.*" />
+          <option name="PATTERN" value="io.maxfeng.dubbox.zk_redis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.maxfeng.dubbox.concurrent" />
-      <option name="MAIN_CLASS_NAME" value="io.maxfeng.dubbox.concurrent.AtomicTest" />
-      <option name="METHOD_NAME" value="testAtomicLong" />
+      <option name="PACKAGE_NAME" value="io.maxfeng.dubbox.zk_redis" />
+      <option name="MAIN_CLASS_NAME" value="io.maxfeng.dubbox.zk_redis.CreateModeTest" />
+      <option name="METHOD_NAME" value="testCreateModeAndValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateModeTest.testCreateTempMode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dubbox-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.maxfeng.dubbox.zk_redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.maxfeng.dubbox.zk_redis" />
+      <option name="MAIN_CLASS_NAME" value="io.maxfeng.dubbox.zk_redis.CreateModeTest" />
+      <option name="METHOD_NAME" value="testCreateTempMode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -341,17 +479,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AtomicTest.testAtomicLong" />
       <item itemvalue="Application.StartRpcProvider" />
       <item itemvalue="JUnit.RpcIONetTest.testRpcNetByAIO" />
       <item itemvalue="JUnit.InvocationTest.testInterfaceSubClass" />
+      <item itemvalue="JUnit.CreateModeTest.testCreateTempMode" />
+      <item itemvalue="JUnit.CreateModeTest.testCreateModeAndValue" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateModeTest.testCreateModeAndValue" />
+        <item itemvalue="JUnit.CreateModeTest.testCreateTempMode" />
         <item itemvalue="JUnit.InvocationTest.testInterfaceSubClass" />
         <item itemvalue="JUnit.RpcIONetTest.testRpcNetByAIO" />
         <item itemvalue="Application.StartRpcProvider" />
-        <item itemvalue="JUnit.AtomicTest.testAtomicLong" />
       </list>
     </recent_temporary>
   </component>
@@ -380,19 +520,17 @@
       <option name="project" value="LOCAL" />
       <updated>1542444069050</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="项目结构适当调整">
+      <created>1542444905711</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542444905712</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AtomicTest_testAtomicLong - 2018.11.16 at 22h 56m 39s.xml">
-      <configuration name="AtomicTest.testAtomicLong" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AtomicTest_testAtomicLong - 2018.11.16 at 22h 56m 59s.xml">
-      <configuration name="AtomicTest.testAtomicLong" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RpcIONetTest_testRpcNetByAIO - 2018.11.16 at 23h 50m 14s.xml">
-      <configuration name="RpcIONetTest.testRpcNetByAIO" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RpcIONetTest_testRpcNetByAIO - 2018.11.16 at 23h 56m 40s.xml">
       <configuration name="RpcIONetTest.testRpcNetByAIO" configurationId="JUnit" />
     </history-entry>
@@ -414,12 +552,21 @@
     <history-entry file="InvocationTest_testInterfaceSubClass - 2018.11.17 at 15h 38m 39s.xml">
       <configuration name="InvocationTest.testInterfaceSubClass" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CreateModeTest_testCreateTempMode - 2018.11.17 at 19h 12m 10s.xml">
+      <configuration name="CreateModeTest.testCreateTempMode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CreateModeTest_testCreateTempMode - 2018.11.17 at 19h 12m 35s.xml">
+      <configuration name="CreateModeTest.testCreateTempMode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CreateModeTest_testCreateModeAndValue - 2018.11.17 at 19h 14m 30s.xml">
+      <configuration name="CreateModeTest.testCreateModeAndValue" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="27" width="1869" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29379463" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.29763865" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -447,7 +594,7 @@
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.3294893" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29379463" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29763865" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -456,7 +603,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49972543" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49972543" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6911447" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -529,158 +676,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/test/java/io/maxfeng/dubbox/net/NetIpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/resources/app.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-consumer/src/test/java/io/maxfeng/dubbox/biz/HelloWorldService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-consumer/src/test/java/io/maxfeng/dubbox/biz/HelloWorldServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-consumer/src/test/java/io/maxfeng/dubbox/javassist/JavassitAPITest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="26" column="60" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-consumer/src/test/java/io/maxfeng/dubbox/biz/TestProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-consumer/src/test/java/io/maxfeng/dubbox/guava/CacheTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/model/Tab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/test/java/io/maxfeng/dubbox/util/ClassUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-common/src/test/java/io/maxfeng/dubbox/concurrent/AtomicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-consumer/src/main/java/io/maxfeng/dubbox/biz/DubboxInterfaceImpl.java" />
-    <entry file="jar://$PROJECT_DIR$/../../software/java/src.zip!/java/lang/annotation/ElementType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="73" column="51" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../software/java/src.zip!/java/lang/Override.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="48" selection-start-line="48" selection-end-line="49" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../software/java/src.zip!/java/lang/annotation/Annotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-consumer/src/test/java/io/maxfeng/dubbox/biz/RPCProxyClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="21" column="73" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../repo/org/t-io/tio-parent/3.2.1.v20181024-RELEASE/tio-parent-3.2.1.v20181024-RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="258" column="12" selection-start-line="258" selection-start-column="12" selection-end-line="258" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/net/MediaType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3168">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/net/HttpHeaders.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="23" column="61" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../repo/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar!/okhttp3/Request.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="190" column="66" selection-start-line="190" selection-start-column="66" selection-end-line="190" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../repo/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar!/okhttp3/RequestBody.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="30" column="68" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../repo/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/JSON.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="637" column="38" selection-start-line="637" selection-start-column="32" selection-end-line="637" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../repo/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar!/okhttp3/MediaType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../repo/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar!/okhttp3/Call.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../software/java/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8125">
@@ -700,13 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/zookeeper/ZKRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dubbox-consumer/src/main/java/io/maxfeng/dubbox/biz/DubboxInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -718,9 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,9 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" column="44" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -745,42 +727,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/model/MsgBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="127" column="24" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2608#2609#0" expanded="true" />
-            <element signature="e#2649#2650#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/test/java/io/maxfeng/dubbox/common/InvocationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="92" column="61" selection-start-line="92" selection-start-column="61" selection-end-line="92" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2477#2478#0" expanded="true" />
-            <element signature="e#2545#2546#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt" />
     <entry file="file://$PROJECT_DIR$/dubbox-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-parent.iml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dubbox-provider/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -796,13 +749,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/common/Tab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/common/Tab.java" />
     <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/util/NetUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -824,57 +771,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/annotation/RpcInvoke.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/exception/InterfaceImplException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/StartRpcProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/invoke/DelegateDynamicProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="84" column="48" selection-start-line="84" selection-start-column="48" selection-end-line="84" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/boot/ScanningRpc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="44" column="58" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../software/java/src.zip!/javax/xml/ws/RequestWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="41" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/dubbox-parent.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/biz/DubboxInterface.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -883,17 +781,265 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/biz/DubboxInterfaceImpl.java">
+    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/invoke/DelegateDynamicProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1444">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/annotation/RpcInvoke.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/model/Tab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/model/MsgBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="127" column="24" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/boot/ScanningRpc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/test/java/io/maxfeng/dubbox/common/InvocationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2545#2546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/test/java/io/maxfeng/dubbox/common/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../software/java/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/StartRpcProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/util/ClassUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../software/java/src.zip!/javax/xml/ws/RequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/org/t-io/tio-http-server/3.2.1.v20181024-RELEASE/tio-http-server-3.2.1.v20181024-RELEASE.jar!/org/tio/http/server/annotation/HttpCache.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/org/t-io/tio-http-server/3.2.1.v20181024-RELEASE/tio-http-server-3.2.1.v20181024-RELEASE.jar!/org/tio/http/server/annotation/RequestPath.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/test/java/io/maxfeng/dubbox/zk_redis/CreateModeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="58" column="25" lean-forward="true" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/zookeeper/ZKRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="28" column="23" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="28" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.jar!/com/google/errorprone/annotations/RequiredModifiers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../software/java/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/objects/annotations/Optimistic.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/base/Defaults.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/base/Functions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2136">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/base/VerifyException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="26" column="1" selection-start-line="26" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/base/Verify.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3115">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/base/Objects.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/base/Optional.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/io/Closer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/primitives/Booleans.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/util/concurrent/AtomicDoubleArray.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/util/concurrent/Atomics.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/common/util/concurrent/RateLimiter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repo/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar!/com/google/thirdparty/publicsuffix/TrieParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/annotation/Rpc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="264">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/biz/DubboxInterfaceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="72" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/exception/ConfigRpcException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-common/src/main/java/io/maxfeng/dubbox/model/RModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/parse/Parsing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="898">
+          <caret line="70" column="21" selection-start-line="57" selection-start-column="27" selection-end-line="70" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
