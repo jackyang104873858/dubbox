@@ -45,11 +45,4 @@ public class ZKRegistry {
             }
         });
     }
-
-
-    private static void createMode(String modePath) {
-        assert modePath != null;
-
-    }
-
 }
