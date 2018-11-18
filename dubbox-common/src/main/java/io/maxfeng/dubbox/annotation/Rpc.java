@@ -16,14 +16,14 @@ public @interface Rpc {
      *
      * @return
      */
-    public String group() default "";
+    String group() default "";
 
     /**
      * instance alias
      *
      * @return
      */
-    public String alias() default "";
+    String alias() default "";
 
     /**
      * exclude not registry
@@ -31,7 +31,7 @@ public @interface Rpc {
      *
      * @return
      */
-    public Class<?>[] exclude() default {Object.class};
+    Class<?>[] exclude() default {Object.class};
 
 
 }

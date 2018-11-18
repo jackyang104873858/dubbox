@@ -17,7 +17,11 @@ import java.util.List;
  */
 public class Parsing {
 
-    public static List<RModel> rModels = Lists.newArrayList();
+    private static List<RModel> rModels = Lists.newArrayList();
+
+    public static List<RModel> getrModels() {
+        return rModels;
+    }
 
     /**
      * 接口存储数据结构设计
@@ -25,7 +29,7 @@ public class Parsing {
      *
      * @param target
      */
-    public static void init(Class<?> target) throws ConfigRpcException {
+    private static void init(Class<?> target) throws ConfigRpcException {
 
         //获取所有类
         List<Class<?>> classList = ClassUtil.getClasses(target.getPackage().getName());
@@ -96,18 +100,25 @@ public class Parsing {
     }
 
     //计算处理接口注册  group 一定不等于 "" || null
-    private static void tableRModel() {
+    private static void tableRModel() throws ConfigRpcException {
 
-        for (RModel var1 : rModels) {
+        int t = rModels.size();
+        for (int i = 0; i < t; i++) {
 
-            for (RModel var2 : rModels) {
-                if (var1.getClazz().equals(var2.getClazz())) {
-                    //一个接口多个实现类  处理结构
-
+            for (int j = 0; j < t; j++) {
+                if (i != j) {
+                    //不能自己和自己比
+                    if (rModels.get(i).getGroup().equals(rModels.get(j).getGroup())) {
+                        throw new ConfigRpcException(rModels.get(i).getClassPathName() + "  By two or more than two class implement," +
+                                "@Rpc annotation field 'group',required group is not same;");
+                    }
                 }
             }
         }
     }
 
-
+    public static void obtainRegistryInfo(Class<?> clazz) throws ConfigRpcException {
+        init(clazz);
+        tableRModel();
+    }
 }

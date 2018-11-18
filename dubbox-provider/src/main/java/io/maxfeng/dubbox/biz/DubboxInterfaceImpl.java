@@ -8,7 +8,7 @@ import java.io.Serializable;
  * @author MaXueFeng
  * @since 1.0
  */
-@Rpc(group = "group1", alias = "dubboxInterfaceImpl1")
+@Rpc(alias = "dubboxInterfaceImpl1")
 public class DubboxInterfaceImpl implements DubboxInterface, Serializable {
 
     public void producer() {
