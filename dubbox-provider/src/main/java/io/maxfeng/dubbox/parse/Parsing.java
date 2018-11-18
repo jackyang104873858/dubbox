@@ -19,10 +19,6 @@ public class Parsing {
 
     private static List<RModel> rModels = Lists.newArrayList();
 
-    public static List<RModel> getrModels() {
-        return rModels;
-    }
-
     /**
      * 接口存储数据结构设计
      * List<RModel>
@@ -117,8 +113,9 @@ public class Parsing {
         }
     }
 
-    public static void obtainRegistryInfo(Class<?> clazz) throws ConfigRpcException {
+    public static List<RModel> obtainRegistryInfo(Class<?> clazz) throws ConfigRpcException {
         init(clazz);
         tableRModel();
+        return rModels;
     }
 }

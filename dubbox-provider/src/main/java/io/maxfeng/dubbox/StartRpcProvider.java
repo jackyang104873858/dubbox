@@ -15,9 +15,8 @@ public class StartRpcProvider {
 
 
     public static void main(String[] args) throws ConfigRpcException {
-        Parsing.obtainRegistryInfo(StartRpcProvider.class);
-        List<RModel> rModels = Parsing.getrModels();
-        String string = JSON.toJSONString(rModels);
-        System.out.println(string);
+        List<RModel> rModels = Parsing.obtainRegistryInfo(StartRpcProvider.class);
+        String jsonString = JSON.toJSONString(rModels);
+        System.out.println(jsonString);
     }
 }
