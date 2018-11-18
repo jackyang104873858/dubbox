@@ -103,10 +103,16 @@ public class Parsing {
 
             for (int j = 0; j < t; j++) {
                 if (i != j) {
-                    //不能自己和自己比
-                    if (rModels.get(i).getGroup().equals(rModels.get(j).getGroup())) {
-                        throw new ConfigRpcException(rModels.get(i).getClassPathName() + "  By two or more than two class implement," +
-                                "@Rpc annotation field 'group',required group is not same;");
+
+                    if (rModels.get(i).getClazz().equals(rModels.get(j).getClazz())) {
+                        //不能自己和自己比
+                        if (rModels.get(i).getGroup().equals(rModels.get(j).getGroup())) {
+                            throw new ConfigRpcException(rModels.get(i).getClassPathName() + "  By two or more than two class implement," +
+                                    "@Rpc annotation field 'group',required group is not same;");
+                        } else {
+                            //本质是一维数据   所以不设置j索引出的count计数器
+                            rModels.get(i).setCount();
+                        }
                     }
                 }
             }

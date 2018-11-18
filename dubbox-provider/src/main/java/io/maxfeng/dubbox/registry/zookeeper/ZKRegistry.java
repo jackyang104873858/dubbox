@@ -11,6 +11,7 @@ import org.apache.zookeeper.CreateMode;
 
 /**
  * @author MaXueFeng
+ * @since 1.0
  */
 public class ZKRegistry {
 
