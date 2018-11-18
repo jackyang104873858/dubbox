@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17ba68cb-f18c-48d4-878b-ee8697501866" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/ServiceRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/parse/Parsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/parse/Parsing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/zookeeper/ZKRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/zookeeper/ZKRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/StartRpcProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/StartRpcProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/biz/DubboxInterfaceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/biz/DubboxInterfaceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/registry/zookeeper/ZKRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbox-provider/target/classes/io/maxfeng/dubbox/registry/zookeeper/ZKRegistry.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,14 +35,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="25" />
-          <entry key="java" value="7706" />
+          <entry key="java" value="7767" />
           <entry key="txt" value="39" />
           <entry key="xml" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7706" />
+          <entry key="JAVA" value="7767" />
           <entry key="PLAIN_TEXT" value="64" />
           <entry key="XML" value="73" />
         </counts>
@@ -55,7 +51,7 @@
         <counts>
           <entry key="class" value="24" />
           <entry key="iml" value="2" />
-          <entry key="java" value="181" />
+          <entry key="java" value="182" />
           <entry key="pom" value="2" />
           <entry key="properties" value="1" />
           <entry key="txt" value="2" />
@@ -66,7 +62,7 @@
         <counts>
           <entry key="CLASS" value="24" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="181" />
+          <entry key="JAVA" value="182" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="26" />
@@ -76,11 +72,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/parse/Parsing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="112" column="58" selection-start-line="112" selection-start-column="58" selection-end-line="112" selection-end-column="58" />
+            <state relative-caret-position="572">
+              <caret line="121" column="49" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,11 +111,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/zookeeper/ZKRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="888">
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/ServiceRegistry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -190,6 +195,8 @@
         <option value="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/biz/DubboxInterfaceImpl2.java" />
         <option value="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/zookeeper/ZKRegistry.java" />
         <option value="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/parse/Parsing.java" />
+        <option value="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/Registry.java" />
+        <option value="$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/ServiceRegistry.java" />
       </list>
     </option>
   </component>
@@ -280,16 +287,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dubbox" type="462c0819:PsiDirectoryNode" />
-              <item name="parse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbox-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbox-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbox-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbox" type="462c0819:PsiDirectoryNode" />
               <item name="registry" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -303,6 +300,14 @@
               <item name="registry" type="462c0819:PsiDirectoryNode" />
               <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dubbox-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbox-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbox-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -312,7 +317,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542512991930" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542513217866" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../web-template" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -508,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542510906848</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="zk注册表优化">
+      <created>1542512997881</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1542512997881</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -547,7 +559,7 @@
     <frame x="51" y="27" width="1869" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3014827" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3014827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -556,7 +568,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49972543" visible="true" weight="0.41468683" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49972543" weight="0.41468683" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3725702" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -670,7 +682,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/readme.txt" />
     <entry file="file://$PROJECT_DIR$/dubbox-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1007,16 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/zookeeper/ZKRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/StartRpcProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -1039,11 +1040,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/parse/Parsing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="112" column="58" selection-start-line="112" selection-start-column="58" selection-end-line="112" selection-end-column="58" />
+        <state relative-caret-position="572">
+          <caret line="121" column="49" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/zookeeper/ZKRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-provider/src/main/java/io/maxfeng/dubbox/registry/ServiceRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
