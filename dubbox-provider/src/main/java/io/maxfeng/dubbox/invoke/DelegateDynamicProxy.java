@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.google.common.base.Strings;
 import io.maxfeng.dubbox.boot.ScanningRpc;
 import io.maxfeng.dubbox.exception.InvokeException;
-import io.maxfeng.dubbox.model.MsgBody;
+import io.maxfeng.dubbox.model.RpcBody;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.tio.http.common.HttpConfig;
@@ -40,7 +40,7 @@ public class DelegateDynamicProxy {
 
         String jsonStr = request.getBodyString();
 
-        MsgBody info = DynamicProxy.parseInvokeInfo(jsonStr);
+        RpcBody info = DynamicProxy.parseInvokeInfo(jsonStr);
 
         System.out.println(info);
 
@@ -56,12 +56,12 @@ public class DelegateDynamicProxy {
 
     static class DynamicProxy {
 
-        static MsgBody parseInvokeInfo(String jsonStr) {
+        static RpcBody parseInvokeInfo(String jsonStr) {
             assert jsonStr != null;
-            return JSON.parseObject(jsonStr, MsgBody.class);
+            return JSON.parseObject(jsonStr, RpcBody.class);
         }
 
-        static void invokeMethod(MsgBody v) throws InvokeException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        static void invokeMethod(RpcBody v) throws InvokeException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
             assert v != null;
             String interfaceName = v.getInterfaceName();
             if (Strings.isNullOrEmpty(interfaceName)) {
@@ -71,12 +71,12 @@ public class DelegateDynamicProxy {
             Class<?>[] reference = null;
             Object[] args = null;
 
-            List<MsgBody.TypeAndMethodName> tmp = v.getTypeAndMethodNames();
+            List<RpcBody.InvokeInfo> tmp = v.getInvokeInfos();
             if (tmp != null && tmp.size() > 0) {
                 reference = new Class[tmp.size()];
                 args = new Object[tmp.size()];
                 for (int i = 0; i < tmp.size(); i++) {
-                    MsgBody.TypeAndMethodName var1 = tmp.get(i);
+                    RpcBody.InvokeInfo var1 = tmp.get(i);
                     reference[i] = var1.getType();
                     args[i] = var1.getArgName();
                 }

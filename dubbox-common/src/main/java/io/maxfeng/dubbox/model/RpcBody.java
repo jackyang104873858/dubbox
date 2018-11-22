@@ -7,7 +7,7 @@ import java.util.List;
  * @author MaXueFeng
  * @since 1.0
  */
-public class MsgBody implements Serializable {
+public class RpcBody implements Serializable {
 
     /**
      * requestID   promise NIO no cause BUG
@@ -25,9 +25,9 @@ public class MsgBody implements Serializable {
     private String methodName;
 
     /**
-     * typeAndMethodNames class type and value
+     * invokeInfos class type and value
      */
-    private List<TypeAndMethodName> typeAndMethodNames;
+    private List<InvokeInfo> invokeInfos;
 
     /**
      * response code
@@ -45,12 +45,12 @@ public class MsgBody implements Serializable {
         return responseBody;
     }
 
-    public List<TypeAndMethodName> getTypeAndMethodNames() {
-        return typeAndMethodNames;
+    public List<InvokeInfo> getInvokeInfos() {
+        return invokeInfos;
     }
 
-    public void setTypeAndMethodNames(List<TypeAndMethodName> typeAndMethodNames) {
-        this.typeAndMethodNames = typeAndMethodNames;
+    public void setInvokeInfos(List<InvokeInfo> invokeInfos) {
+        this.invokeInfos = invokeInfos;
     }
 
     public void setResponseBody(Object responseBody) {
@@ -95,18 +95,18 @@ public class MsgBody implements Serializable {
 
     @Override
     public String toString() {
-        return "MsgBody{" +
+        return "RpcBody{" +
                 "requestID=" + requestID +
                 ", interfaceName='" + interfaceName + '\'' +
                 ", argName='" + methodName + '\'' +
-                ", typeAndMethodNames=" + typeAndMethodNames +
+                ", invokeInfos=" + invokeInfos +
                 ", code=" + code +
                 ", timeout=" + timeout +
                 ", responseBody=" + responseBody +
                 '}';
     }
 
-    public static class TypeAndMethodName implements Serializable {
+    public static class InvokeInfo implements Serializable {
 
         private Class type;
 
@@ -130,7 +130,7 @@ public class MsgBody implements Serializable {
 
         @Override
         public String toString() {
-            return "TypeAndMethodName{" +
+            return "InvokeInfo{" +
                     "type=" + type +
                     ", argName='" + argName + '\'' +
                     '}';

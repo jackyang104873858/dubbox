@@ -4,7 +4,7 @@ import com.google.common.collect.Maps;
 import io.maxfeng.dubbox.annotation.Component;
 import io.maxfeng.dubbox.annotation.Consumer;
 import io.maxfeng.dubbox.exception.ConsumeParseException;
-import io.maxfeng.dubbox.proxy.JdkInvocationProxy;
+import io.maxfeng.dubbox.proxy.JdkProxy;
 import io.maxfeng.dubbox.util.ClassUtil;
 
 import java.lang.reflect.Field;
@@ -24,13 +24,13 @@ public class ConsumerContext {
     /**
      * 启动注解扫描
      */
-    public static void run(Class<?> clazz) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+    public static void run(Class<?> clazz) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, ConsumeParseException {
         List<Class<?>> classList = ClassUtil.getClasses(clazz.getPackage().getName());
 
         bean(classList);
 
         for (Class<?> var : classList) {
-
+            parseField(var);
         }
     }
 
@@ -61,7 +61,7 @@ public class ConsumerContext {
                 field.setAccessible(true);
 
                 //value  TODO create proxy Object
-                field.set(instance, JdkInvocationProxy.getProxy(var));
+                field.set(instance, JdkProxy.getProxy(var));
             }
         }
     }

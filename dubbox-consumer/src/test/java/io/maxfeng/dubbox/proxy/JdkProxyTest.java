@@ -1,5 +1,8 @@
 package io.maxfeng.dubbox.proxy;
 
+import io.maxfeng.dubbox.biz.DubboxInterface;
+import org.junit.Test;
+
 /**
  * @author MaXueFeng
  * @since 1.0
@@ -12,7 +15,7 @@ public class JdkProxyTest {
 //
 //        DubboxInterface subject = new DubboxInterfaceImpl();
 //
-//        JdkInvocationProxy handler = new JdkInvocationProxy();
+//        JdkProxy handler = new JdkProxy();
 //
 //        ClassLoader loader = subject.getClass().getClassLoader();
 //
@@ -30,7 +33,7 @@ public class JdkProxyTest {
 //
 //        DubboxInterface subject = new DubboxInterfaceImpl();
 //
-//        JdkInvocationProxy handler = new JdkInvocationProxy(subject);
+//        JdkProxy handler = new JdkProxy(subject);
 //
 //        DubboxInterface var = (DubboxInterface) handler.getProxy();
 //
@@ -44,12 +47,9 @@ public class JdkProxyTest {
 //    }
 
     //No Pass
-//    @Test
-//    public void testProxyObjectInvokeMethod1() {
-//        DubboxInterface proxy = (DubboxInterface)
-//                new JdkInvocationProxy(DubboxInterface.class).getProxy();
-//        String r = proxy.producer();
-//
-//        System.out.println(r);
-//    }
+    @Test
+    public void testProxyObjectInvokeMethod1() {
+        Class<?>[] interfaces = DubboxInterface.class.getClass().getInterfaces();
+
+    }
 }
