@@ -1,6 +1,11 @@
 package io.maxfeng.dubbox.zk_redis;
 
+import io.maxfeng.dubbox.StartRpcProvider;
+import io.maxfeng.dubbox.exception.ConfigRpcException;
+import io.maxfeng.dubbox.exception.ZKRegistryException;
+import io.maxfeng.dubbox.registry.ServiceRegistry;
 import io.maxfeng.dubbox.registry.zookeeper.ZKRegistry;
+import io.maxfeng.dubbox.registry.zookeeper.ZookeeperServiceRegistry;
 import io.maxfeng.dubbox.util.NetUtil;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
@@ -57,6 +62,31 @@ public class CreateModeTest {
         client.start();
         client.create().forPath("/test", "hello world".getBytes());
         System.in.read();
+    }
+
+    @Test
+    public void testNodeIsExist() throws Exception {
+        new ZookeeperServiceRegistry().doCreate("/io.maxfeng.dubbox.biz.DubboxInterface", false);
+    }
+
+    @Test
+    public void testCreateClient() throws Exception {
+        CuratorFramework client = ServiceRegistry.zkClient();
+        client.create().withMode(CreateMode.EPHEMERAL).forPath("/io");
+    }
+
+    @Test
+    public void testZkRegistry() throws ZKRegistryException, ConfigRpcException {
+        ServiceRegistry registry = new ZookeeperServiceRegistry();
+        registry.execute(StartRpcProvider.class);
+    }
+
+    @Test
+    public void testDoCreateMode() throws Exception {
+        ZookeeperServiceRegistry registry = new ZookeeperServiceRegistry();
+
+        registry.doCreate("/io.maxfeng.dubbox.biz.DubboxInterface", true);
+        registry.doCreate("/io.maxfeng.dubbox.biz.DubboxInterface/provider", true);
     }
 
 }

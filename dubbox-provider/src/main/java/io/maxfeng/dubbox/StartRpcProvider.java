@@ -1,11 +1,11 @@
 package io.maxfeng.dubbox;
 
-import com.alibaba.fastjson.JSON;
 import io.maxfeng.dubbox.exception.ConfigRpcException;
-import io.maxfeng.dubbox.model.RModel;
-import io.maxfeng.dubbox.parse.Parsing;
+import io.maxfeng.dubbox.exception.ZKRegistryException;
+import io.maxfeng.dubbox.registry.ServiceRegistry;
+import io.maxfeng.dubbox.registry.zookeeper.ZookeeperServiceRegistry;
 
-import java.util.List;
+import java.io.IOException;
 
 /**
  * @author MaXueFeng
@@ -14,9 +14,9 @@ import java.util.List;
 public class StartRpcProvider {
 
 
-    public static void main(String[] args) throws ConfigRpcException {
-        List<RModel> rModels = Parsing.obtainRegistryInfo(StartRpcProvider.class);
-        String jsonString = JSON.toJSONString(rModels);
-        System.out.println(jsonString);
+    public static void main(String[] args) throws ZKRegistryException, ConfigRpcException, IOException {
+        ServiceRegistry registry = new ZookeeperServiceRegistry();
+        registry.execute(StartRpcProvider.class);
+        System.in.read();
     }
 }

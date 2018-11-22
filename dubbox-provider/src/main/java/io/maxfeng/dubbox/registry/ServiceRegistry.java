@@ -1,6 +1,7 @@
 package io.maxfeng.dubbox.registry;
 
 import io.maxfeng.dubbox.exception.ConfigRpcException;
+import io.maxfeng.dubbox.exception.ZKRegistryException;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
@@ -15,7 +16,7 @@ public interface ServiceRegistry {
     String BASE_NAMESPACE = "dubbox";
 
 
-    default CuratorFramework zkClient() {
+    static CuratorFramework zkClient() {
         RetryPolicy policy = new ExponentialBackoffRetry(1000, 3);
         CuratorFramework client =
                 CuratorFrameworkFactory.builder().
@@ -29,10 +30,10 @@ public interface ServiceRegistry {
         return client;
     }
 
-    default Object redisClient() {
+    static Object redisClient() {
         return null;
     }
 
     //服务注册
-    void execute(Class<?> clazz) throws ConfigRpcException;
+    void execute(Class<?> clazz) throws ConfigRpcException, ZKRegistryException;
 }

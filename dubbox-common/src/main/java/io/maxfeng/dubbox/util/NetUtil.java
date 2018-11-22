@@ -5,7 +5,6 @@ import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.util.Enumeration;
 import java.util.List;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
@@ -38,13 +37,12 @@ public class NetUtil {
                 if (split.length != 0) {
                     int n = 0;
                     for (String var : split) {
-                        Pattern pattern = Pattern.compile("-?[0-9]+.?[0-9]+");
-                        Matcher isNum = pattern.matcher(var);
-                        if (isNum.matches()) {
+                        Pattern pattern = Pattern.compile("[0-9]*");
+                        if (pattern.matcher(var).matches()) {
                             n++;
                         }
                     }
-                    if (n == 3) {
+                    if (n == 4) {
                         return address;
                     }
                 }

@@ -24,6 +24,7 @@ public class Parsing {
      * List<RModel>
      *
      * @param target
+     * @see RModel#setGroup(java.lang.String)
      */
     private static void init(Class<?> target) throws ConfigRpcException {
 
@@ -96,6 +97,7 @@ public class Parsing {
     }
 
     //计算处理接口注册  group 一定不等于 "" || null
+//    @Deprecated
     private static void tableRModel() throws ConfigRpcException {
 
         int t = rModels.size();
@@ -109,10 +111,11 @@ public class Parsing {
                         if (rModels.get(i).getGroup().equals(rModels.get(j).getGroup())) {
                             throw new ConfigRpcException(rModels.get(i).getClassPathName() + "  By two or more than two class implement," +
                                     "@Rpc annotation field 'group',required group is not same;");
-                        } else {
-                            //本质是一维数据   所以不设置j索引出的count计数器
-                            rModels.get(i).setCount();
                         }
+//                        else {
+//                            //本质是一维数据   所以不设置j索引出的count计数器  目前得出结论统计计数器对于注册表没有太大的作用  所以放弃此方案
+//                            rModels.get(i).setCount();
+//                        }
                     }
                 }
             }
@@ -121,7 +124,6 @@ public class Parsing {
 
     public static List<RModel> obtainRegistryInfo(Class<?> clazz) throws ConfigRpcException {
         init(clazz);
-        tableRModel();
         return rModels;
     }
 }
