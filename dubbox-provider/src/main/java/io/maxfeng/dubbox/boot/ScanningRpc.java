@@ -1,7 +1,7 @@
 package io.maxfeng.dubbox.boot;
 
 import com.google.common.collect.Maps;
-import io.maxfeng.dubbox.annotation.Rpc;
+import io.maxfeng.dubbox.annotation.Provider;
 import io.maxfeng.dubbox.util.ClassUtil;
 import io.maxfeng.dubbox.invoke.DelegateDynamicProxy;
 import io.maxfeng.dubbox.registry.zookeeper.ZKRegistry;
@@ -28,7 +28,7 @@ public class ScanningRpc {
         List<Class<?>> classes = ClassUtil.getClasses(packageName);
 
         classes.forEach(v -> {
-            if (v.getAnnotation(Rpc.class) != null) {
+            if (v.getAnnotation(Provider.class) != null) {
 
                 Class<?>[] interfaces = v.getInterfaces();
 
@@ -41,7 +41,7 @@ public class ScanningRpc {
         });
 
         classes.forEach(v -> {
-            if (v.getAnnotation(Rpc.class) != null) {
+            if (v.getAnnotation(Provider.class) != null) {
                 Class<?>[] interfaces = v.getInterfaces();
             }
         });

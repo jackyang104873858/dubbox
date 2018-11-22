@@ -7,7 +7,7 @@ import org.junit.Test;
  * @author MaXueFeng
  * @since 1.0
  */
-public class RpcIONetTest {
+public class ProviderIONetTest {
 
     @Test
     public void testRpcNetByAIO() {

@@ -1,12 +1,12 @@
 package io.maxfeng.dubbox.biz;
 
-import io.maxfeng.dubbox.annotation.Rpc;
+import io.maxfeng.dubbox.annotation.Provider;
 
 /**
  * @author MaXueFeng
  * @since 1.0
  */
-@Rpc(alias = "dubboxInterfaceImpl2", group = "group2")
+@Provider(alias = "dubboxInterfaceImpl2", group = "group2")
 public class DubboxInterfaceImpl2 implements DubboxInterface {
 
     public void producer() {

@@ -1,7 +1,7 @@
 package io.maxfeng.dubbox.parse;
 
 import com.google.common.collect.Lists;
-import io.maxfeng.dubbox.annotation.Rpc;
+import io.maxfeng.dubbox.annotation.Provider;
 import io.maxfeng.dubbox.exception.ConfigRpcException;
 import io.maxfeng.dubbox.model.RModel;
 import io.maxfeng.dubbox.util.ClassUtil;
@@ -32,7 +32,7 @@ public class Parsing {
         List<Class<?>> classList = ClassUtil.getClasses(target.getPackage().getName());
 
         for (Class<?> aClass : classList) {
-            Rpc annotation = aClass.getAnnotation(Rpc.class);
+            Provider annotation = aClass.getAnnotation(Provider.class);
             if (annotation != null) {
 
                 Class<?>[] excludes = annotation.exclude();
@@ -110,7 +110,7 @@ public class Parsing {
                         //不能自己和自己比
                         if (rModels.get(i).getGroup().equals(rModels.get(j).getGroup())) {
                             throw new ConfigRpcException(rModels.get(i).getClassPathName() + "  By two or more than two class implement," +
-                                    "@Rpc annotation field 'group',required group is not same;");
+                                    "@Provider annotation field 'group',required group is not same;");
                         }
 //                        else {
 //                            //本质是一维数据   所以不设置j索引出的count计数器  目前得出结论统计计数器对于注册表没有太大的作用  所以放弃此方案

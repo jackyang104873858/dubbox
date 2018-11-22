@@ -1,6 +1,6 @@
 package io.maxfeng.dubbox.biz;
 
-import io.maxfeng.dubbox.annotation.Rpc;
+import io.maxfeng.dubbox.annotation.Provider;
 
 import java.io.Serializable;
 
@@ -8,7 +8,7 @@ import java.io.Serializable;
  * @author MaXueFeng
  * @since 1.0
  */
-@Rpc
+@Provider
 public class TestInterfaceImpl implements TestInterface, Serializable {
     @Override
     public void producer() {
